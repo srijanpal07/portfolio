@@ -1,6 +1,6 @@
 ## Education							       		
-- M.S., Robotics	             | [University of Minnesota, Twin Cities](https://cse.umn.edu/mnri) (_Septemeber 2022_ - _Present_) 			        		
-- B.E., Mechanical Engineering | [Jadavpur University](https://jadavpuruniversity.in/)            (_August 2018_ - _May 2022_)
+- M.S. | Robotics	              | [University of Minnesota, Twin Cities](https://cse.umn.edu/mnri) (_Septemeber 2022_ - _Present_) 			        		
+- B.E. | Mechanical Engineering | [Jadavpur University](https://jadavpuruniversity.in/)            (_August 2018_ - _May 2022_)
 
 ## Projects
 ### Autonomous Drone for Dynamic Smoke Plume Tracking
