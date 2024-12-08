@@ -6,18 +6,18 @@
 
 ## Projects
 ### Autonomous Drone for Dynamic Smoke Plume Tracking
-[Project](https://www.mdpi.com/1424-8220/22/8/3048) | [Gihub](https://www.mdpi.com/1424-8220/22/8/3048)
+[Project](https://www.mdpi.com/1424-8220/22/8/3048) | [Github](https://www.mdpi.com/1424-8220/22/8/3048) | [Paper](https://www.mdpi.com/1424-8220/22/8/3048)
 
 An autonomous drone controller, trained via a custom PPO-based deep reinforcement learning pipeline integrated with YOLO-based smoke segmentation, trained on Unreal Engine (integrated with AirSim) simulation,  and deployed on Pixhawk quadcopter, for robust dynamic smoke plume tracking in the unsteady wind, improving tracking efficiency (vs PID) by 15%.
 
 ![Drone Tracking Smoke Plume](/assets/img/eeg_band_discovery.jpeg)
 
 ### Autonomous 3D Reconstruction of Target Object using Drone Imagery
-[Project](https://www.mdpi.com/1424-8220/22/11/4240)
+[Project](https://www.mdpi.com/1424-8220/22/11/4240) | [Github](https://www.mdpi.com/1424-8220/22/8/3048) | [Presentation](https://www.mdpi.com/1424-8220/22/8/3048)
 
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
+In this project, a drone autonomously captures images of a target object from optimal positions, performing a circular flight path to gather views from multiple angles. The images are processed through a pipeline that sorts them by blurriness, selecting the sharpest ones to generate the camera trajectory using COLMAP. This trajectory and the corresponding images are fed into a modified NeRF model — featuring an updated MLP architecture, encoding, and learning parameters — optimized specifically for drone imagery, resulting in a high-fidelity 3D reconstruction of the target object.
 
-![Bike Study](/assets/img/bike_study.jpeg)
+![Drone Tracking Smoke Plume](/assets/img/eeg_band_discovery.jpeg)
 
 
 
