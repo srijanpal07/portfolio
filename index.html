@@ -59,11 +59,26 @@
 
 
 
-    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+
+
+
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <img src='assets/images/SmokeTrackingDrone.png' width="160">
+          <div class="two" id='ever_image'>
+            <!--img src='images/ever_after.png' width=100% -->
+            <img src="assets/images/smoketrack_first.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
+            <img src="assets/images/smoketrack_second.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
+            <img src="assets/images/smoketrack_third.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
+            <img src="assets/images/smoketrack_fourth.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
+          </div>
+          <!--img src='images/ever_before.png' width=100%-->
         </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://github.com/srijanpal07/autonomous-drone-for-dynamic-smoke-plume-tracking.git">
@@ -78,7 +93,7 @@
         <br>
         <em>ICRA 2025</em>, Under Review
         <br>
-        <a href="https://srijanpal07.github.io/autonomous-drone-for-dynamic-smoke-plume-tracking/">Project page</a>
+        <a href="https://github.com/srijanpal07/autonomous-drone-for-dynamic-smoke-plume-tracking">Project page</a>
         /
         <a href="assets/data/ICRA2025_Autonomous_drone_smoke_tracking.pdf">Paper</a>
         /
