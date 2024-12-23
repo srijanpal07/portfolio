@@ -63,54 +63,41 @@
 
 
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-        <td style="padding:16px;width:20%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id="ever_image" style="position:relative; width:100%; height:auto;">
-              <!-- First image is visible by default -->
-              <img src="assets/images/smoketrack_first.png" style="position:absolute; top:0; left:0; width:100%; opacity:1;">
-              <img src="assets/images/smoketrack_second.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
-              <img src="assets/images/smoketrack_third.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
-              <img src="assets/images/smoketrack_fourth.png" style="position:absolute; top:0; left:0; width:100%; opacity:0;">
-            </div>
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="ever_video" style="position:relative; width:100%; height:auto;">
+            <!-- Add a video element -->
+            <video id="smoketrack_video" style="width:100%; display:block;" muted>
+              <source src="assets/videos/smoketrack_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <script type="text/javascript">
-            let currentImage = 0; // Track the current image index
-            let images;
-            let cycleInterval; // Store the interval ID
-      
-            function ever_start() {
-              // Get all image elements inside 'ever_image'
-              images = document.querySelectorAll("#ever_image img");
-              if (images.length > 0) {
-                cycleImages(); // Start cycling
-                cycleInterval = setInterval(cycleImages, 1000); // Change image every second
-              }
+        </div>
+        <script type="text/javascript">
+          let videoElement;
+    
+          function ever_start() {
+            // Get the video element
+            videoElement = document.getElementById("smoketrack_video");
+            if (videoElement) {
+              videoElement.play(); // Start playing the video
             }
-      
-            function cycleImages() {
-              // Hide all images and show the current one
-              images.forEach((img, index) => {
-                img.style.opacity = index === currentImage ? "1" : "0";
-              });
-              currentImage = (currentImage + 1) % images.length; // Move to the next image
+          }
+    
+          function ever_stop() {
+            // Pause and reset the video
+            if (videoElement) {
+              videoElement.pause();
+              videoElement.currentTime = 0; // Reset to the beginning
             }
-      
-            function ever_stop() {
-              clearInterval(cycleInterval); // Stop the interval
-              if (images) {
-                images.forEach((img, index) => {
-                  img.style.opacity = index === 0 ? "1" : "0"; // Show the first image
-                });
-                currentImage = 0; // Reset to the first image
-              }
-            }
-      
-            document.addEventListener("DOMContentLoaded", () => {
-              images = document.querySelectorAll("#ever_image img");
-              ever_stop(); // Ensure the first image is visible initially
-            });
-          </script>
-        </td>
+          }
+    
+          document.addEventListener("DOMContentLoaded", () => {
+            videoElement = document.getElementById("smoketrack_video");
+            ever_stop(); // Ensure the video is paused and reset initially
+          });
+        </script>
+      </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://github.com/srijanpal07/autonomous-drone-for-dynamic-smoke-plume-tracking.git">
 			<span class="papertitle">Autonmous Drone for Dynamic Smoke Plume Tracking
