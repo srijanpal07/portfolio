@@ -67,10 +67,10 @@
         <div class="one">
           <div class="two" id='ever_image'>
             <!--img src='images/ever_after.png' width=100% -->
-            <img src="assets/images/smoketrack_first.png" width:100%>
-            <img src="assets/images/smoketrack_second.png" width:100%>
-            <img src="assets/images/smoketrack_third.png" width:100%>
-            <img src="assets/images/smoketrack_fourth.png" width:100%>
+            <img src="assets/images/smoketrack_first.png" width=100%>
+            <!--img src="assets/images/smoketrack_second.png" width=100%>
+            <img src="assets/images/smoketrack_third.png" width=100%>
+            <img src="assets/images/smoketrack_fourth.png" width=100%-->
           </div>
           <img src='assets/images/smoketrack_fourth.png' width=100%>
         </div>
@@ -115,18 +115,18 @@
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
+          <div class="two" id='smoketrack_image'>
+					  <img src='assets/images/smoketrack_first.png' width=100%>
 					</div>
-          <img src='images/ever_before.png' width=100%>
+          <img src='assets/images/smoketrack_second.png' width=100%>
         </div>
         <script type="text/javascript">
           function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+            document.getElementById('smoketrack_image').style.opacity = "1";
           }
 
           function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+            document.getElementById('smoketrack_image').style.opacity = "0";
           }
           ever_stop()
         </script>
