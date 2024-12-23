@@ -65,27 +65,22 @@
             <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
               <td style="padding:16px;width:20%;vertical-align:top">
                 <div class="one">
-                  <!-- GIF image -->
                   <div class="two" id="smoketrack_image" style="opacity:0;">
                     <img src="assets/images/smoketrack-teaser.gif" width="100%" height="60%" alt="Smoke Track Animation">
                   </div>
-                  <!-- Default static image -->
                   <img id="default_image" src="assets/images/smoketrack.jpg" width="160" alt="Smoke Track Default">
                 </div>
                 <script type="text/javascript">
                   function smoketrack_start() {
-                    // Show the GIF and hide the default image
                     document.getElementById('smoketrack_image').style.opacity = "1";
                     document.getElementById('default_image').style.opacity = "0";
                   }
             
                   function smoketrack_stop() {
-                    // Hide the GIF and show the default image
                     document.getElementById('smoketrack_image').style.opacity = "0";
                     document.getElementById('default_image').style.opacity = "1";
                   }
-            
-                  // Ensure the default state shows the static image
+
                   document.addEventListener("DOMContentLoaded", smoketrack_stop);
                 </script>
               </td>
@@ -121,23 +116,26 @@
 
 
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="threedtarget_stop()" onmouseover="threedtarget_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:top">
         <div class="one">
-          <div class="two" id='smoketrack_image'>
-					  <img src='assets/images/smoketrack_first.png' width=100%>
-					</div>
-          <img src='assets/images/smoketrack_second.png' width=100%>
+          <div class="two" id="threedtarget_image" style="opacity:0;">
+            <img src="assets/images/3Dperson-teaser.gif" width="100%" height="100%" alt="3D Target Animation">
+          </div>
+          <img id="default_image" src="assets/images/3dPerson.png" width="160" alt="3D Target Default">
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('smoketrack_image').style.opacity = "1";
+          function threedtarget_start() {
+            document.getElementById('threedtarget_image').style.opacity = "1";
+            document.getElementById('default_image').style.opacity = "0";
           }
-
-          function ever_stop() {
-            document.getElementById('smoketrack_image').style.opacity = "0";
+    
+          function threedtarget_stop() {
+            document.getElementById('threedtarget_image').style.opacity = "0";
+            document.getElementById('default_image').style.opacity = "1";
           }
-          ever_stop()
+          
+          document.addEventListener("DOMContentLoaded", threedtarget_stop);
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
