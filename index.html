@@ -62,28 +62,35 @@
 
 
 
-      <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
-        <td style="padding:16px;width:20%;vertical-align:top">
-          <div class="one">
-            <div class="two" id='smoketrack_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="assets/videos/smoketrack.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='assets/images/smoketrack.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function smoketrack_start() {
-              document.getElementById('smoketrack_image').style.opacity = "1";
-            }
-  
-            function smoketrack_stop() {
-              document.getElementById('smoketrack_image').style.opacity = "0";
-            }
-            smoketrack_stop()
-          </script>
-      </td>
+            <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
+              <td style="padding:16px;width:20%;vertical-align:top">
+                <div class="one">
+                  <!-- GIF image -->
+                  <div class="two" id="smoketrack_image" style="opacity:0;">
+                    <img src="assets/images/smoketrack-teaser.gif" width="100%" height="100%" alt="Smoke Track Animation">
+                  </div>
+                  <!-- Default static image -->
+                  <img id="default_image" src="assets/images/smoketrack.jpg" width="160" alt="Smoke Track Default">
+                </div>
+                <script type="text/javascript">
+                  function smoketrack_start() {
+                    // Show the GIF and hide the default image
+                    document.getElementById('smoketrack_image').style.opacity = "1";
+                    document.getElementById('default_image').style.opacity = "0";
+                  }
+            
+                  function smoketrack_stop() {
+                    // Hide the GIF and show the default image
+                    document.getElementById('smoketrack_image').style.opacity = "0";
+                    document.getElementById('default_image').style.opacity = "1";
+                  }
+            
+                  // Ensure the default state shows the static image
+                  document.addEventListener("DOMContentLoaded", smoketrack_stop);
+                </script>
+              </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://github.com/srijanpal07/autonomous-drone-for-dynamic-smoke-plume-tracking.git">
+        <a href="https://srijanpal07.github.io/autonomous-drone-for-dynamic-smoke-plume-tracking/">
 			<span class="papertitle">Autonmous Drone for Dynamic Smoke Plume Tracking
 </span>
         </a>
@@ -95,7 +102,7 @@
         <br>
         <em>ICRA 2025</em>, Under Review
         <br>
-        <a href="https://github.com/srijanpal07/autonomous-drone-for-dynamic-smoke-plume-tracking">Project page</a>
+        <a href="https://srijanpal07.github.io/autonomous-drone-for-dynamic-smoke-plume-tracking/">Project page</a>
         /
         <a href="assets/data/ICRA2025_Autonomous_drone_smoke_tracking.pdf">Paper</a>
         /
