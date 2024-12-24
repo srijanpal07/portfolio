@@ -63,7 +63,7 @@
 
 
     <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:top">
+      <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id="smoketrack_image" style="opacity:0;">
             <img src="assets/images/smoketrack-teaser.gif" width="100%" height="60%" alt="Smoke Track Animation">
@@ -153,13 +153,11 @@
         /
         <a href="https://srijanpal07.github.io/portfolio/">Presentation</a>
         /
-        <a href="https://srijanpal07.github.io/portfolio/">Video</a>
-        /
-        <a href="https://srijanpal07.github.io/portfolio/">GitHub</a>
+        <a href="https://srijanpal07.github.io/portfolio/">Github</a>
         <p></p>
         <p>
           Developed an algorithm for autonomous drone-based image capture using optimal circular paths, sorting sharp images to 
-          generate camera trajectories with COLMAP, and feeding them into a modified Instatnt-NGP (optimized MLP architecture and encoding) 
+          generate camera trajectories with COLMAP, and feeding them into a modified Instatnt-NGP (optimized MLP and encoding) 
           for high-fidelity 3D reconstruction.
         </p>
       </td>
@@ -215,23 +213,29 @@
     </tr>
 
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+
+
+
+    <tr onmouseout="swarmforest_stop()" onmouseover="swarmforest_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:top">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
-					</div>
-          <img src='images/ever_before.png' width=100%>
+          <div class="two" id="swarmforest_image" style="opacity:0;">
+            <img src="assets/images/swarmforest-teaser.gif" width="100%" height="60%" alt="Swarm Forest Animation">
+          </div>
+          <img id="default_swarmforest_image" src="assets/images/swarmforest.jpg" width="160" alt="Swarm Forest Default">
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+          function swarmforest_start() {
+            document.getElementById('swarmforest_image').style.opacity = "1";
+            document.getElementById('default_swarmforest_image').style.opacity = "0";
+          }
+    
+          function swarmforest_stop() {
+            document.getElementById('swarmforest_image').style.opacity = "0";
+            document.getElementById('default_swarmforest_image').style.opacity = "1";
           }
 
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
-          }
-          ever_stop()
+          document.addEventListener("DOMContentLoaded", swarmforest_stop);
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
@@ -241,8 +245,8 @@
         </a>
         <br>
         <a href="https://www.linkedin.com/in/shashank-sharma-3752b3116/">S. Sharma</a>,
-        <strong>Srijan K. Pal</strong>,
         <a href="https://www.linkedin.com/in/nikil-krishnakumar-a4200a1bb/">N. Krishnakumar</a>,
+        <strong>Srijan K. Pal</strong>,
         <a href="https://cse.umn.edu/me/jiarong-hong">J. Hong</a>
         <br>
         <em>Graduate Reasearch Assistant</em> at Flow Field Imaging Lab
@@ -254,9 +258,9 @@
         <a href="https://www.youtube.com/watch?v=quvpeCY-58g">Video</a>
         <p></p>
         <p>
-          Designed and deployed a 4-drone swarm with DIH sensors, autonomous waypoint generation, and a master-worker architecture 
-          to map real-time volumetric smoke particle dispersion during a large-scale prescribed forest burn, 
-          providing insights into particle morphology and spatial distribution.
+          Deployed a 4-drone swarm with DIH particle sensors in a master-worker architecture and autonomously generate waypoints
+          to map real-time volumetric smoke particle dispersion during a large-scale prescribed forest fire, 
+          providing insights into smoke particle morphology and spatial distribution.
         </p>
       </td>
     </tr>
