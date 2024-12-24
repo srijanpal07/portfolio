@@ -62,28 +62,28 @@
 
 
 
-            <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
-              <td style="padding:16px;width:20%;vertical-align:top">
-                <div class="one">
-                  <div class="two" id="smoketrack_image" style="opacity:0;">
-                    <img src="assets/images/smoketrack-teaser.gif" width="100%" height="60%" alt="Smoke Track Animation">
-                  </div>
-                  <img id="default_image" src="assets/images/smoketrack.jpg" width="160" alt="Smoke Track Default">
-                </div>
-                <script type="text/javascript">
-                  function smoketrack_start() {
-                    document.getElementById('smoketrack_image').style.opacity = "1";
-                    document.getElementById('default_image').style.opacity = "0";
-                  }
-            
-                  function smoketrack_stop() {
-                    document.getElementById('smoketrack_image').style.opacity = "0";
-                    document.getElementById('default_image').style.opacity = "1";
-                  }
+    <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:top">
+        <div class="one">
+          <div class="two" id="smoketrack_image" style="opacity:0;">
+            <img src="assets/images/smoketrack-teaser.gif" width="100%" height="60%" alt="Smoke Track Animation">
+          </div>
+          <img id="default_smoketrack_image" src="assets/images/smoketrack.jpg" width="160" alt="Smoke Track Default">
+        </div>
+        <script type="text/javascript">
+          function smoketrack_start() {
+            document.getElementById('smoketrack_image').style.opacity = "1";
+            document.getElementById('default_smoketrack_image').style.opacity = "0";
+          }
+    
+          function smoketrack_stop() {
+            document.getElementById('smoketrack_image').style.opacity = "0";
+            document.getElementById('default_smoketrack_image').style.opacity = "1";
+          }
 
-                  document.addEventListener("DOMContentLoaded", smoketrack_stop);
-                </script>
-              </td>
+          document.addEventListener("DOMContentLoaded", smoketrack_stop);
+        </script>
+      </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://srijanpal07.github.io/autonomous-drone-for-dynamic-smoke-plume-tracking/">
 			<span class="papertitle">Autonmous Drone for Dynamic Smoke Plume Tracking
@@ -120,19 +120,19 @@
       <td style="padding:16px;width:20%;vertical-align:top">
         <div class="one">
           <div class="two" id="threedtarget_image" style="opacity:0;">
-            <img src="assets/images/3Dperson-teaser.gif" width="100%" height="100%" alt="3D Target Animation">
+            <img src="assets/images/3Dperson-teaser.gif" width="100%" height="95%" alt="3D Target Animation">
           </div>
-          <img id="default_image" src="assets/images/3dPerson.png" width="160" alt="3D Target Default">
+          <img id="default_threedtarget_image" src="assets/images/3dPerson.png" width="160" alt="3D Target Default">
         </div>
         <script type="text/javascript">
           function threedtarget_start() {
             document.getElementById('threedtarget_image').style.opacity = "1";
-            document.getElementById('default_image').style.opacity = "0";
+            document.getElementById('default_threedtarget_image').style.opacity = "0";
           }
     
           function threedtarget_stop() {
             document.getElementById('threedtarget_image').style.opacity = "0";
-            document.getElementById('default_image').style.opacity = "1";
+            document.getElementById('default_threedtarget_image').style.opacity = "1";
           }
 
           document.addEventListener("DOMContentLoaded", threedtarget_stop);
@@ -159,7 +159,7 @@
         <p></p>
         <p>
           Developed an algorithm for autonomous drone-based image capture using optimal circular paths, sorting sharp images to 
-          generate camera trajectories with COLMAP, and feeding them into a modified NeRF (optimized MLP architecture and encoding) 
+          generate camera trajectories with COLMAP, and feeding them into a modified Instatnt-NGP (optimized MLP architecture and encoding) 
           for high-fidelity 3D reconstruction.
         </p>
       </td>
