@@ -22,18 +22,18 @@
                 <p class="name" style="text-align: center;">
                   Srijan Kumar Pal
                 </p>
-                <p>I'm a Master's in Robotics student at the <a href="https://cse.umn.edu/mnri">University of Minnesota</a>, 
+                <p>I'm a 1st year Ph.D student in EE at the <a href="https://cse.umn.edu/ece">University of Minnesota</a>, 
                   where I work under <a href="https://cse.umn.edu/me/jiarong-hong">Prof. Jiarong Hong</a>, 
                   as a part of the <a href="https://www.jiaronghonglab.com/">Flow Field Imaging Lab</a>. 
-                  During my time at UMN, I have also had the opportunity to collaborate with 
+                </p>
+                <p>Previously I received my Masters in Robotics from <a href="https://cse.umn.edu/mnri">University of Minnesota</a> 
+                  and my Bachelor's degree from <a href="https://jadavpuruniversity.in/">Jadavpur University</a>. During my time at UMN, I have also had the opportunity to collaborate with 
                   <a href="https://cse.umn.edu/cs/maria-gini">Prof. Maria Gini</a> and 
                   <a href="https://cse.umn.edu/ece/changhyun-choi">Prof. Changyun Choi</a>.
                 </p>
-                <p>Previously I received my Bachelor's degree from <a href="https://jadavpuruniversity.in/">Jadavpur University</a>.
-                </p>
                 <p style="text-align:center">
                   <a href="mailto:srijanpal07@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="assets/data/Resume_Srijan Kumar Pal.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="assets/data/Resume_Srijan Kumar Pal.pdf">Resume</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/srijan-kumar-pal-3545b5194/">LinkedIn</a> &nbsp;/&nbsp;
                   <a href="https://github.com/srijanpal07/">Github</a>
                 </p>
@@ -46,7 +46,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2>Research Interest</h2>
                 <p>
                   I'm interested in computer vision, vision-based robot learning, and autonomous control. 
                   My research focuses on developing vision-based controllers that enable autonomous systems to perceive, navigate, 
@@ -61,7 +61,7 @@
 
 
 
-
+    <!-- ################################### Autonmous Drone for Dynamic Smoke Plume Tracking ################################### -->
     <tr onmouseout="smoketrack_stop()" onmouseover="smoketrack_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -93,13 +93,15 @@
 	      			<strong>Srijan K. Pal</strong>,
 				<a href="https://www.linkedin.com/in/shashank-sharma-3752b3116/">S. Sharma</a>,
 				<a href="https://www.linkedin.com/in/nikil-krishnakumar-a4200a1bb/">N. Krishnakumar</a>,
-				<a href="https://cse.umn.edu/me/jiarong-hong">J. Hong</a>
+				<a href="https://scholar.google.com/citations?hl=en&user=JzR4ezEAAAAJ&view_op=list_works">J. Hong</a>
         <br>
         <em>ICRA 2025</em>, Accepted
         <br>
-        <a href="https://srijanpal07.github.io/autonomous-drone-for-dynamic-smoke-plume-tracking/">Project page</a>
+        <a href="https://srijanpal07.github.io/autonomous-drone-for-dynamic-smoke-plume-tracking/">Project Page</a>
         /
-        <a href="assets/data/ICRA2025_Autonomous_drone_smoke_tracking.pdf">Paper</a>
+        <a href="https://ieeexplore.ieee.org/document/11128144">Paper (Link)</a>
+        /
+        <a href="assets/data/ICRA2025_Autonomous_drone_for_dynamic_smoke_plume_tracking.pdf">Paper (PDF)</a>
         /
         <a href="assets/data/ICRA2025_Autonomous Drone for Dynamic Smoke Plume Tracking - website.pdf">Presentation</a>
         /
@@ -116,6 +118,106 @@
 
 
 
+
+    <!--    ########################### 3D Path Planning in Dynamic Environment ########################### -->
+    <tr onmouseout="threedpathplanning_stop()" onmouseover="threedpathplanning_start()">
+      <td style="padding:16px;width:20%;vertical-align:top">
+        <div class="one">
+          <div class="two" id="threedpathplanning_image" style="opacity:0;">
+            <img src="assets/images/3dPathPlan-teaser.gif" width="100%" height="95%" alt="3D Target Animation">
+          </div>
+          <img id="default_threedpathplanning_image" src="assets/images/3dPathPlan.png" width="160" alt="3D Target Default">
+        </div>
+        <script type="text/javascript">
+          function threedpathplanning_start() {
+            document.getElementById('threedpathplanning_image').style.opacity = "1";
+            document.getElementById('default_threedpathplanning_image').style.opacity = "0";
+          }
+    
+          function threedpathplanning_stop() {
+            document.getElementById('threedpathplanning_image').style.opacity = "0";
+            document.getElementById('default_threedpathplanning_image').style.opacity = "1";
+          }
+
+          document.addEventListener("DOMContentLoaded", threedpathplanning_stop);
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://github.com/srijanpal07/3D-Path-Planning-in-Dynamic-Environment.git">
+			<span class="papertitle">3D Path Planning in Dynamic Environment
+</span>
+        </a>
+        <br>
+        <strong>Srijan K. Pal</strong>
+        <br>
+        Under the guidance of <a href="https://cse.umn.edu/cs/andrew-exley">Prof. Andrew Exley</a> during <em> Fall 2025 <a href="https://umtc.catalog.prod.coursedog.com/courses/0021521">Artificial Intelligence I Course</a> </em>
+        <br>
+        <a href="https://github.com/srijanpal07/3D-Path-Planning-in-Dynamic-Environment.git">Github</a>
+        /
+        <a href="assets/data/CSCI5511_3D_Path_Planning_in_Dynamic_Environment .pdf">Report</a>
+        <p></p>
+        <p>
+          A 3D path-planning framework using offline and online A* with local sensing-based replanning 
+          to navigate voxelized environments containing unknown dynamic obstacles, with interactive 
+          3D visualizations and quantitative planning metrics.
+        </p>
+      </td>
+    </tr>
+
+
+
+
+
+    <!--    ########################### Sparsity Focused Super Resolution with Deep Learning ########################### -->
+    <tr onmouseout="superresolution_stop()" onmouseover="superresolution_start()">
+      <td style="padding:16px;width:20%;vertical-align:top">
+        <div class="one">
+          <div class="two" id="superresolution_image" style="opacity:0;">
+            <img src="assets/images/superresolution-teaser.gif" width="100%" height="95%" alt="3D Target Animation">
+          </div>
+          <img id="default_superresolution_image" src="assets/images/superresolution.png" width="160" alt="3D Target Default">
+        </div>
+        <script type="text/javascript">
+          function superresolution_start() {
+            document.getElementById('superresolution_image').style.opacity = "1";
+            document.getElementById('default_superresolution_image').style.opacity = "0";
+          }
+    
+          function superresolution_stop() {
+            document.getElementById('superresolution_image').style.opacity = "0";
+            document.getElementById('default_superresolution_image').style.opacity = "1";
+          }
+
+          document.addEventListener("DOMContentLoaded", superresolution_stop);
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://github.com/srijanpal07/Sparsity-focused-Super-Resolution-with-Deep-Learning.git">
+			<span class="papertitle">Sparsity Focused Super Resolution with Deep Learning
+</span>
+        </a>
+        <br>
+        <strong>Srijan K. Pal</strong>, H. Nair, V. Natamai
+        <br>
+        Under the guidance of <a href="https://cse.umn.edu/ece/mehmet-akcakaya">Prof. M. Akcakaya</a> during <em> Fall 2025 <a href="https://umtc.catalog.prod.coursedog.com/courses/7991891">Image Processing and Applications Course</a> </em>
+        <br>
+        <a href="https://github.com/srijanpal07/Sparsity-focused-Super-Resolution-with-Deep-Learning.git">Github</a>
+        /
+        <a href="assets/data/EE5561_Sparsity_Focused_Super_Resolution_with_Deep_Learning.pdf">Report</a>
+        <p></p>
+        <p>
+          A sparsity-aware deep super-resolution model that enforces L1 regularization on selected 
+          intermediate feature maps to balance reconstruction fidelity and perceptual quality, 
+          outperforming baseline SRCNN and VDSR variants through systematic ablation.
+        </p>
+      </td>
+    </tr>
+
+
+
+
+
+    <!-- ########################### Instant-NGP-based 3D Reconstruction Using Autonomous Drone Imagery ########################### -->
     <tr onmouseout="threedtarget_stop()" onmouseover="threedtarget_start()">
       <td style="padding:16px;width:20%;vertical-align:top">
         <div class="one">
@@ -167,6 +269,7 @@
 
 
 
+    <!-- ########################### 3D Characterization of Smoke Plume Dispersion Using Multi-view Drone Swarm ########################### -->
     <tr onmouseout="threedsmoke_stop()" onmouseover="threedsmoke_start()">
       <td style="padding:16px;width:20%;vertical-align:top">
         <div class="one">
@@ -191,22 +294,24 @@
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://srijanpal07.github.io/portfolio/">
-			<span class="papertitle">3D Reconstruction of Smoke Plume using Drone Swarm
+			<span class="papertitle">3D Characterization of Smoke Plume Dispersion using Multi-view Drone Swarm
 </span>
         </a>
         <br>
         <a href="https://www.linkedin.com/in/shashank-sharma-3752b3116/">S. Sharma</a>,
         <a href="https://www.linkedin.com/in/nikil-krishnakumar-a4200a1bb/">N. Krishnakumar</a>,
         <strong>Srijan K. Pal</strong>,
-        <a href="https://cse.umn.edu/me/jiarong-hong">J. Hong</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=JzR4ezEAAAAJ&view_op=list_works">J. Hong</a>
         <br>
         <em>Graduate Reasearch Assistant</em> at Flow Field Imaging Lab
         <br>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0048969725011039">Paper (Link)</a>
+        /
+        <a href="assets/data/STOTEN2025_3D_characterization_of_smoke_plume_dispersion_using_multi-view_drone_swarm.pdf">Paper (PDF)</a>
+        /
+        <a href="https://www.youtube.com/watch?v=awEMzzelRg4">Video</a>
+        /
         <a href="assets/data/3D_smoke_recon_presentation.pdf">Presentation</a>
-        /
-        <a href="assets/data/3D_smoke_recon_report.pdf">Document</a>
-        /
-        <a href="https://srijanpal07.github.io/portfolio/">Video (Coming soon!)</a>
         <p></p>
         <p>
           Developed a synchronized, autonomous 4-drone swarm for adaptive multi-view imaging, dynamic repositioning, 
@@ -219,6 +324,7 @@
 
 
 
+    <!-- ########################### Drone Swarm for Forest Fire Smoke Particle Mapping ########################### -->
     <tr onmouseout="swarmforest_stop()" onmouseover="swarmforest_start()" bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:top">
         <div class="one">
@@ -254,9 +360,11 @@
         <br>
         <em>Graduate Reasearch Assistant</em> at Flow Field Imaging Lab
         <br>
-        <a href="https://srijanpal07.github.io/portfolio/">Presentation (Coming soon!)</a>
+        <a href="https://www.startribune.com/u-of-m-researchers-launch-smoke-sensing-drones-that-one-day-could-fight-wildfires/601475987">Media Coverage</a>
         /
-        <a href="https://www.youtube.com/watch?v=quvpeCY-58g">Video [available]</a>
+        <a href="https://www.youtube.com/watch?v=quvpeCY-58g">Video</a>
+        /
+        <a href="https://srijanpal07.github.io/portfolio/">Presentation (Coming soon!)</a>
         <p></p>
         <p>
           Deployed a 4-drone swarm with DIH particle sensors in a master-worker architecture and autonomously generate waypoints
@@ -265,6 +373,7 @@
         </p>
       </td>
     </tr>
+
 
 
 
@@ -277,7 +386,8 @@
     </tr>
 
 
-            
+        
+    
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
